@@ -91,11 +91,11 @@ export default function AboutPage() {
           <div className="flex justify-center">
             <Image
               src="https://placehold.co/500x500.png"
-              alt="Golden lines on a dark background, representing Kintsugi"
+              alt="An abstract image representing serenity and clarity, inspired by the Kintsugi philosophy."
               width={500}
               height={500}
               className="rounded-lg object-cover shadow-2xl"
-              data-ai-hint="kintsugi gold"
+              data-ai-hint="serene clarity"
             />
           </div>
         </div>
