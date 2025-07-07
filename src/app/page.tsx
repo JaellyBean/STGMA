@@ -76,11 +76,6 @@ export default function Home() {
                 <Button asChild size="lg" className="font-bold">
                   <Link href="/resources">Read Articles</Link>
                 </Button>
-                <Button asChild size="lg" variant="secondary" className="font-bold">
-                  <Link href="/support-finder">
-                    <HeartHandshake className="mr-2" /> Find a Support Tool
-                  </Link>
-                </Button>
               </div>
             </div>
             <div className="order-1 lg:order-2">

@@ -13,7 +13,6 @@ import { CartIcon } from './cart-icon';
 const navLinks = [
   { href: '/shop', label: 'Shop' },
   { href: '/resources', label: 'Resources' },
-  { href: '/support-finder', label: 'Support Finder' },
   { href: '/about', label: 'About' },
   { href: '/contact', label: 'Contact' },
 ];
