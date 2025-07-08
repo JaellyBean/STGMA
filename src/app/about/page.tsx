@@ -13,7 +13,7 @@ export default function AboutPage() {
             Our Mission: To End the Stigma
           </h1>
           <p className="mt-6 text-xl text-foreground/80">
-            STGMA Apparel was founded on the belief that clothing can be a quiet statement and a powerful catalyst for conversation. We're dedicated to breaking down the walls around mental health through community, connection, and conscious apparel.
+            STGMA Apparel was founded on the belief that clothing can be a quiet statement and a powerful catalyst for conversation. We exist to rewrite the stigma around mental health through fashion, culture, and connection.
           </p>
         </div>
       </div>
