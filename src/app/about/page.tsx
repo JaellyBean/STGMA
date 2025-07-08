@@ -75,32 +75,6 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <div className="container py-16 md:py-24">
-        <div className="grid items-center gap-12 lg:grid-cols-2">
-          <div>
-            <h2 className="font-headline text-4xl font-bold text-primary">
-              Inspired by Kintsugi
-            </h2>
-            <p className="mt-4 text-lg text-foreground/80">
-              Our accent color, Muted Gold, is inspired by the Japanese art of Kintsugi. This practice involves repairing broken pottery by mending the areas of breakage with lacquer dusted or mixed with powdered gold.
-            </p>
-            <p className="mt-4 text-lg text-foreground/80">
-              We see a parallel in the human experience. Our challenges and struggles do not diminish us; they are part of our story. Embracing our "cracks" and healing from them can make us stronger, more resilient, and uniquely beautiful. This philosophy is woven into the fabric of our brand.
-            </p>
-          </div>
-          <div className="flex justify-center">
-            <Image
-              src="https://placehold.co/500x500.png"
-              alt="An abstract image representing serenity and clarity, inspired by the Kintsugi philosophy."
-              width={500}
-              height={500}
-              className="rounded-lg object-cover shadow-2xl"
-              data-ai-hint="serene clarity"
-            />
-          </div>
-        </div>
-      </div>
-
       <section className="bg-secondary/50 py-16 md:py-24">
         <div className="container">
           <div className="grid items-center gap-12 lg:grid-cols-2">
