@@ -13,7 +13,7 @@ export default function AboutPage() {
             Our Mission: To End the Stigma
           </h1>
           <p className="mt-6 text-xl text-foreground/80">
-            STGMA Apparel was founded in 2022 on the belief that clothing can be a quiet statement and a powerful catalyst for conversation. We exist to rewrite the stigma around mental health through fashion, culture, and connection.
+            STGMA was founded in 2022 on the belief that clothing can be a quiet statement and a powerful catalyst for conversation. We exist to rewrite the stigma around mental health through fashion, culture, and connection.
           </p>
         </div>
       </div>
@@ -77,18 +77,8 @@ export default function AboutPage() {
 
       <section className="bg-secondary/50 py-16 md:py-24">
         <div className="container">
-          <div className="grid items-center gap-12 lg:grid-cols-2">
-            <div className="order-2 lg:order-1 flex justify-center">
-              <Image
-                src="https://placehold.co/500x500.png"
-                alt="A group of diverse people in a supportive conversation"
-                width={500}
-                height={500}
-                className="rounded-lg object-cover shadow-2xl"
-                data-ai-hint="diverse friends"
-              />
-            </div>
-            <div className="order-1 lg:order-2">
+          <div className="flex justify-center">
+            <div className="max-w-3xl">
               <h2 className="font-headline text-4xl font-bold text-primary">
                 More Than Just Apparel
               </h2>
@@ -109,13 +99,8 @@ export default function AboutPage() {
         <div className="text-center">
           <h2 className="font-headline text-4xl font-bold text-primary">Join the Movement</h2>
           <p className="mx-auto mt-4 max-w-2xl text-lg text-foreground/80">
-            Be part of a community that values vulnerability and strength. Wear the change, share your story, and help us end the stigma.
+            Be part of a community that values vulnerability and strength. Share your story and help us end the stigma.
           </p>
-          <div className="mt-8">
-            <Button asChild size="lg" className="font-bold">
-              <Link href="/shop">Shop the Collection</Link>
-            </Button>
-          </div>
         </div>
       </div>
     </div>

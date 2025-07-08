@@ -4,7 +4,6 @@ import { Logo } from './logo';
 const footerLinks = [
   { href: '/about', label: 'About Us' },
   { href: '/contact', label: 'Contact' },
-  { href: '/shop', label: 'Shop' },
   { href: '/resources', label: 'Resources' },
 ];
 
@@ -37,7 +36,7 @@ export function Footer() {
           </div>
         </div>
         <div className="mt-8 border-t pt-8 text-center text-sm text-foreground/60">
-          <p>&copy; 2022 - {new Date().getFullYear()} STGMA Apparel. All rights reserved.</p>
+          <p>&copy; 2022 - {new Date().getFullYear()} STGMA. All rights reserved.</p>
         </div>
       </div>
     </footer>
