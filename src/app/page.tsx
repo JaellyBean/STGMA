@@ -5,6 +5,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { ArrowRight, HeartHandshake } from 'lucide-react';
 import { products } from '@/lib/products';
 import { ProductCard } from '@/components/product-card';
+import { NewsletterForm } from '@/components/newsletter-form';
 
 export default function Home() {
   const featuredProducts = products.slice(0, 3);
@@ -101,11 +102,9 @@ export default function Home() {
                   Join the Movement
                 </h2>
                 <p className="mt-4 text-lg text-accent-foreground/90">
-                  Become a part of a community that's breaking the silence. Follow our journey and share your story.
+                  Sign up for our newsletter to stay up-to-date on new products, resources, and our mission to end the stigma.
                 </p>
-                <div className="mt-6">
-                  <p className="font-bold">#STGMA</p>
-                </div>
+                <NewsletterForm />
               </div>
             </CardContent>
           </Card>
