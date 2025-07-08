@@ -12,7 +12,7 @@ export interface Resource {
   description: string;
   phone?: string;
   website: string;
-  category: 'Immediate Help' | 'Support Hotlines' | 'Therapy & Counseling' | 'Community Support';
+  category: 'Emergency Support' | 'Support Groups' | 'Find a Therapist' | 'Wellness + Self-Care';
 }
 
 export interface CartItem extends Product {
