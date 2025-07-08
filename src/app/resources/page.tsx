@@ -79,7 +79,10 @@ export default function ResourcesPage() {
           Resources
         </h1>
         <p className="mx-auto mt-4 max-w-3xl text-lg text-foreground/80">
-          A community-curated list of mental health resources. If you are in immediate danger, please call 911.
+          A community-curated list of mental health resources.
+        </p>
+        <p className="mt-4 font-bold text-lg text-destructive">
+          If you are in immediate danger, please call 911.
         </p>
       </div>
 
