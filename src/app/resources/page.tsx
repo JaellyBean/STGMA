@@ -1,11 +1,7 @@
 import type { Resource } from '@/lib/types';
 import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { Textarea } from '@/components/ui/textarea';
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
-import { Label } from '@/components/ui/label';
-import { Phone, Globe, AppWindow } from 'lucide-react';
+import { Phone, Globe } from 'lucide-react';
+import { ResourceSuggestionForm } from './resource-suggestion-form';
 
 const resources: Resource[] = [
   {
@@ -128,41 +124,7 @@ export default function ResourcesPage() {
         <p className="text-center mt-2 text-foreground/70">Help us grow our knowledge bank by sharing a resource you've found helpful.</p>
         <Card className="mt-8">
           <CardContent className="p-6">
-            {/* To receive submissions, replace YOUR_FORM_ID with your Formspree endpoint ID */}
-            <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" className="space-y-6">
-              <div className="space-y-2">
-                <Label htmlFor="resource-name">Resource Name</Label>
-                <Input id="resource-name" type="text" name="resource-name" placeholder="e.g., National Suicide Prevention Lifeline" required />
-              </div>
-               <div className="space-y-2">
-                <Label htmlFor="website">Website</Label>
-                <Input id="website" type="url" name="website" placeholder="https://example.com" required />
-              </div>
-               <div className="space-y-2">
-                <Label htmlFor="phone">Phone Number (Optional)</Label>
-                <Input id="phone" type="text" name="phone" placeholder="e.g., 1-800-273-8255" />
-              </div>
-               <div className="space-y-2">
-                <Label htmlFor="description">Description</Label>
-                <Textarea id="description" name="description" placeholder="Briefly describe the resource..." rows={4} required />
-              </div>
-              <div className="space-y-2">
-                <Label htmlFor="category">Category</Label>
-                 <Select name="category" required>
-                  <SelectTrigger id="category">
-                    <SelectValue placeholder="Select a category" />
-                  </SelectTrigger>
-                  <SelectContent>
-                    {categories.map(category => (
-                      <SelectItem key={category} value={category}>{category}</SelectItem>
-                    ))}
-                  </SelectContent>
-                </Select>
-              </div>
-              <Button type="submit" size="lg" className="w-full font-bold">
-                Submit Resource
-              </Button>
-            </form>
+            <ResourceSuggestionForm />
           </CardContent>
         </Card>
       </div>
