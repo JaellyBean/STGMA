@@ -76,7 +76,7 @@ export default function ResourcesPage() {
     <div className="container py-12 md:py-20">
       <div className="mb-12 text-center">
         <h1 className="font-headline text-5xl font-bold tracking-tighter text-primary md:text-6xl">
-          Resource Knowledge Bank
+          Resources
         </h1>
         <p className="mx-auto mt-4 max-w-3xl text-lg text-foreground/80">
           A community-curated list of mental health resources. If you are in immediate danger, please call 911.
