@@ -10,7 +10,7 @@ export function NewsletterForm() {
   const { toast } = useToast();
   const [isSubmitting, setIsSubmitting] = useState(false);
   // To receive submissions, replace this with your own Formspree endpoint ID for the newsletter
-  const formspreeEndpoint = "https://formspree.io/f/YOUR_NEWSLETTER_FORM_ID";
+  const formspreeEndpoint = "https://formspree.io/f/mrbkwadb";
 
   async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();

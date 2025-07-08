@@ -27,7 +27,7 @@ export default function ContactPage() {
               For general inquiries and support, please send us an email. We aim to respond within 24-48 hours.
             </CardDescription>
             <Button asChild variant="link" className="p-0 h-auto mt-4 font-bold">
-              <a href="mailto:support@stgma-apparel.com">support@stgma-apparel.com</a>
+              <a href="mailto:support@stgma.online">support@stgma.online</a>
             </Button>
           </CardContent>
         </Card>
