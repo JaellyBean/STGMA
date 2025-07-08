@@ -64,17 +64,17 @@ export default function Home() {
           <div className="grid items-center gap-12 lg:grid-cols-2">
             <div className="order-2 lg:order-1">
               <h2 className="font-headline text-4xl font-bold text-primary md:text-5xl">
-                Resources for Your Well-being
+                A Hub for Support
               </h2>
               <p className="mt-4 text-lg text-foreground/80">
-                We're committed to providing more than just clothing. Explore our curated collection of articles and tools to support your mental health journey.
+                We're committed to providing more than just clothing. Our goal is to create a community-driven hub for mental health resources.
               </p>
               <p className="mt-4 text-lg text-foreground/80">
-                From understanding anxiety to practicing mindfulness, find resources that resonate with you.
+                Explore our knowledge bank for hotlines, support groups, and other tools to support your well-being journey.
               </p>
               <div className="mt-8 flex flex-wrap gap-4">
                 <Button asChild size="lg" className="font-bold">
-                  <Link href="/resources">Read Articles</Link>
+                  <Link href="/resources">Explore Resources</Link>
                 </Button>
               </div>
             </div>

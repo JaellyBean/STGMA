@@ -7,14 +7,12 @@ export interface Product {
   shopifyUrl: string;
 }
 
-export interface Article {
-  slug: string;
-  title: string;
-  excerpt: string;
-  content: string;
-  image: string;
-  author: string;
-  date: string;
+export interface Resource {
+  name: string;
+  description: string;
+  phone?: string;
+  website: string;
+  category: 'Immediate Help' | 'Support Hotlines' | 'Therapy & Counseling' | 'Community Support';
 }
 
 export interface CartItem extends Product {
