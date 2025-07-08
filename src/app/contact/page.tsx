@@ -65,27 +65,6 @@ export default function ContactPage() {
           </CardContent>
         </Card>
       </div>
-
-      <div className="mx-auto mt-20 max-w-4xl">
-        <h2 className="text-center font-headline text-4xl font-bold text-primary">
-          Send Us a Message
-        </h2>
-        <Card className="mt-8">
-          <CardContent className="p-6">
-            <form action="mailto:contact@stgma-apparel.com" method="post" encType="text/plain" className="space-y-4">
-              <div className="grid gap-4 sm:grid-cols-2">
-                <Input type="text" name="name" placeholder="Your Name" required />
-                <Input type="email" name="email" placeholder="Your Email" required />
-              </div>
-              <Input type="text" name="subject" placeholder="Subject" required />
-              <Textarea name="message" placeholder="Your message..." rows={6} required />
-              <Button type="submit" size="lg" className="w-full font-bold">
-                Send Message
-              </Button>
-            </form>
-          </CardContent>
-        </Card>
-      </div>
     </div>
   );
 }

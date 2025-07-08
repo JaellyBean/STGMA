@@ -34,31 +34,6 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-16 md:py-24">
-        <div className="container px-4 md:px-6">
-          <div className="mx-auto max-w-3xl text-center">
-            <h2 className="font-headline text-4xl font-bold text-primary md:text-5xl">
-              Featured Products
-            </h2>
-            <p className="mt-4 text-lg text-foreground/70">
-              Each piece is designed with comfort and purpose in mind.
-            </p>
-          </div>
-          <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {featuredProducts.map((product) => (
-              <ProductCard key={product.id} product={product} />
-            ))}
-          </div>
-          <div className="mt-12 text-center">
-            <Button asChild variant="link" className="text-lg font-bold text-accent-foreground">
-              <Link href="/shop">
-                Explore All Products <ArrowRight className="ml-2 h-5 w-5" />
-              </Link>
-            </Button>
-          </div>
-        </div>
-      </section>
-
       <section className="bg-secondary/50 py-16 md:py-24">
         <div className="container px-4 md:px-6">
           <div className="grid items-center gap-12 lg:grid-cols-2">
@@ -88,6 +63,31 @@ export default function Home() {
                 data-ai-hint="wellness reading"
               />
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16 md:py-24">
+        <div className="container px-4 md:px-6">
+          <div className="mx-auto max-w-3xl text-center">
+            <h2 className="font-headline text-4xl font-bold text-primary md:text-5xl">
+              Featured Products
+            </h2>
+            <p className="mt-4 text-lg text-foreground/70">
+              Each piece is designed with comfort and purpose in mind.
+            </p>
+          </div>
+          <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {featuredProducts.map((product) => (
+              <ProductCard key={product.id} product={product} />
+            ))}
+          </div>
+          <div className="mt-12 text-center">
+            <Button asChild variant="link" className="text-lg font-bold text-accent-foreground">
+              <Link href="/shop">
+                Explore All Products <ArrowRight className="ml-2 h-5 w-5" />
+              </Link>
+            </Button>
           </div>
         </div>
       </section>
