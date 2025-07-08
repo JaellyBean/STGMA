@@ -17,8 +17,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        body: ['PT Sans', 'sans-serif'],
-        headline: ['Belleza', 'sans-serif'],
+        body: ['League Spartan', 'sans-serif'],
+        headline: ['Oswald', 'sans-serif'],
         code: ['monospace'],
       },
       colors: {
