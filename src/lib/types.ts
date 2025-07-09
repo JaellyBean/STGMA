@@ -18,3 +18,13 @@ export interface Resource {
 export interface CartItem extends Product {
   quantity: number;
 }
+
+export interface Article {
+  slug: string;
+  title: string;
+  excerpt: string;
+  content: string;
+  image: string;
+  author: string;
+  date: string;
+}
