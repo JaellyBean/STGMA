@@ -75,7 +75,7 @@ export default function ResourcesPage() {
   return (
     <div className="container py-12 md:py-20">
       <div className="mb-12 text-center">
-        <h1 className="font-headline text-5xl font-bold tracking-tighter text-primary md:text-6xl">
+        <h1 className="font-headline text-4xl font-bold tracking-tighter text-primary md:text-6xl">
           Resources
         </h1>
         <p className="mx-auto mt-4 max-w-3xl text-lg text-foreground/80">
@@ -95,10 +95,10 @@ export default function ResourcesPage() {
                 {groupedResources[category].map(resource => (
                   <Card key={resource.name} className="flex flex-col">
                     <CardHeader>
-                      <CardTitle>{resource.name}</CardTitle>
+                      <CardTitle className="text-xl">{resource.name}</CardTitle>
                     </CardHeader>
                     <CardContent className="flex-1">
-                      <CardDescription>{resource.description}</CardDescription>
+                      <CardDescription className="text-base">{resource.description}</CardDescription>
                     </CardContent>
                     <CardFooter className="flex flex-col items-start gap-4 pt-4">
                       {resource.phone && (
@@ -121,10 +121,10 @@ export default function ResourcesPage() {
       </div>
       
       <div className="mx-auto mt-20 max-w-4xl">
-        <h2 className="text-center font-headline text-4xl font-bold text-primary">
+        <h2 className="text-center font-headline text-3xl font-bold text-primary md:text-4xl">
           Suggest a Resource
         </h2>
-        <p className="text-center mt-2 text-foreground/70">Help us grow our knowledge bank by sharing a resource you've found helpful.</p>
+        <p className="text-center mt-2 text-base text-foreground/70 md:text-lg">Help us grow our knowledge bank by sharing a resource you've found helpful.</p>
         <Card className="mt-8">
           <CardContent className="p-6">
             <ResourceSuggestionForm />

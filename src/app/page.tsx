@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { NewsletterForm } from '@/components/newsletter-form';
@@ -13,7 +12,7 @@ export default function Home() {
           className="absolute inset-0 bg-grid-slate-900/[0.04] [mask-image:linear-gradient(to_bottom,white_5%,transparent_90%)]"
         ></div>
         <div className="container z-10 px-4 md:px-6">
-          <h1 className="font-headline text-5xl font-bold tracking-tighter text-primary sm:text-6xl md:text-7xl lg:text-8xl">
+          <h1 className="font-headline text-5xl font-bold tracking-tighter text-primary sm:text-6xl md:text-7xl">
             Wear The Change.
           </h1>
           <p className="mx-auto mt-4 max-w-[700px] text-lg text-foreground/80 md:text-xl">
