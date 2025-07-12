@@ -1,7 +1,7 @@
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
-import { Card, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
-import { HeartHandshake, Mic, Users, Shield } from 'lucide-react';
+import { Card, CardHeader, CardTitle, CardDescription, CardContent } from '@/components/ui/card';
+import { HeartHandshake, Mic, Users, Shield, Mail, MessageCircle, HelpCircle } from 'lucide-react';
 
 export default function AboutPage() {
   return (
@@ -96,11 +96,60 @@ export default function AboutPage() {
 
       <div className="container py-16 md:py-24">
         <div className="text-center">
-          <h2 className="font-headline text-3xl font-bold text-primary md:text-4xl">Join the Movement</h2>
-          <p className="mx-auto mt-4 max-w-2xl text-base text-foreground/80 md:text-lg">
-            Be part of a community that values vulnerability and strength. Share your story and help us end the stigma.
-          </p>
+          <h2 className="font-headline text-3xl font-bold text-primary md:text-4xl">Get In Touch</h2>
+           <p className="mt-6 text-lg text-foreground/80 md:text-xl">
+          Whether you have a question about our products, our mission, or just want to share your story, we're here to listen.
+        </p>
         </div>
+         <div className="mt-16 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <Card>
+          <CardHeader className="flex-row items-center gap-4">
+            <Mail className="h-8 w-8 text-accent" />
+            <CardTitle className="font-headline text-xl">Email Us</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <CardDescription className="text-base">
+              For general inquiries and support, please send us an email. We aim to respond within 24-48 hours.
+            </CardDescription>
+            <Button asChild variant="link" className="p-0 h-auto mt-4 font-bold text-base">
+              <a href="mailto:support@stgma.online">support@stgma.online</a>
+            </Button>
+          </CardContent>
+        </Card>
+        <Card>
+          <CardHeader className="flex-row items-center gap-4">
+            <MessageCircle className="h-8 w-8 text-accent" />
+            <CardTitle className="font-headline text-xl">Social Media</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <CardDescription className="text-base">
+              Follow our journey and join the conversation on our social media channels.
+            </CardDescription>
+            <div className="mt-4 flex gap-2">
+              <Button asChild variant="outline">
+                <a href="#" target="_blank" rel="noopener noreferrer">Instagram</a>
+              </Button>
+              <Button asChild variant="outline">
+                <a href="#" target="_blank" rel="noopener noreferrer">Twitter</a>
+              </Button>
+            </div>
+          </CardContent>
+        </Card>
+        <Card>
+          <CardHeader className="flex-row items-center gap-4">
+            <HelpCircle className="h-8 w-8 text-accent" />
+            <CardTitle className="font-headline text-xl">FAQ</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <CardDescription className="text-base">
+              Have a question about shipping, returns, or sizing? Check out our frequently asked questions.
+            </CardDescription>
+            <Button variant="link" className="p-0 h-auto mt-4 font-bold text-base">
+              Visit FAQ Page
+            </Button>
+          </CardContent>
+        </Card>
+      </div>
       </div>
     </div>
   );

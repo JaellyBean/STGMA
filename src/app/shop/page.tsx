@@ -1,4 +1,6 @@
 import { ShoppingBag } from 'lucide-react';
+import { NewsletterForm } from '@/components/newsletter-form';
+import { Card, CardContent } from '@/components/ui/card';
 
 export default function ShopComingSoonPage() {
   return (
@@ -16,6 +18,21 @@ export default function ShopComingSoonPage() {
         <p className="mt-4 text-lg text-foreground/80 md:text-xl">
           Stay tuned!
         </p>
+      </div>
+      <div className="w-full max-w-4xl mt-16">
+        <Card className="bg-gradient-to-r from-accent/80 to-accent text-accent-foreground">
+            <CardContent className="p-8 md:p-12">
+              <div className="mx-auto max-w-4xl text-center">
+                <h2 className="font-headline text-3xl font-bold md:text-4xl">
+                  Join the Movement
+                </h2>
+                <p className="mt-4 text-lg text-accent-foreground/90">
+                  Sign up for our newsletter to be the first to know when the shop goes live and to stay up-to-date on new resources.
+                </p>
+                <NewsletterForm />
+              </div>
+            </CardContent>
+          </Card>
       </div>
     </div>
   );

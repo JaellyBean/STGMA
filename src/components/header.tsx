@@ -10,10 +10,9 @@ import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from '@/co
 import { Logo } from './logo';
 
 const navLinks = [
-  { href: '/shop', label: 'Shop' },
-  { href: '/resources', label: 'Resources' },
   { href: '/about', label: 'About' },
-  { href: '/contact', label: 'Contact' },
+  { href: '/resources', label: 'Resources' },
+  { href: '/shop', label: 'Shop' },
 ];
 
 export function Header() {
@@ -49,7 +48,7 @@ export function Header() {
               </Button>
             </SheetTrigger>
             <SheetContent side="left">
-               <SheetHeader className="p-4">
+               <SheetHeader>
                   <SheetTitle className="sr-only">Menu</SheetTitle>
                 </SheetHeader>
               <div className="flex flex-col gap-6 pt-6">
