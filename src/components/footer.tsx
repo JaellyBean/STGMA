@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { Logo } from './logo';
 
 const footerLinks = [
+  { href: '/shop', label: 'Shop' },
   { href: '/about', label: 'About Us' },
   { href: '/contact', label: 'Contact' },
   { href: '/resources', label: 'Resources' },
