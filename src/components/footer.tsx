@@ -29,7 +29,7 @@ export function Footer() {
             </div>
             <div className="flex flex-col gap-3">
               <h4 className="font-headline text-lg font-semibold">Support</h4>
-              <Link href="#" className="text-sm text-foreground/80 hover:text-foreground">FAQ</Link>
+              <Link href="/faq" className="text-sm text-foreground/80 hover:text-foreground">FAQ</Link>
               <Link href="#" className="text-sm text-foreground/80 hover:text-foreground">Shipping</Link>
               <Link href="#" className="text-sm text-foreground/80 hover:text-foreground">Returns</Link>
             </div>
