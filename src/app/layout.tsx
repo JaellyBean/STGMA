@@ -6,6 +6,7 @@ import { Footer } from '@/components/footer';
 import { Toaster } from "@/components/ui/toaster"
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://stgma.online'),
   title: 'STGMA Apparel: Mental Wellness Hub',
   description: 'Apparel with a mission to destigmatize mental health.',
   openGraph: {
