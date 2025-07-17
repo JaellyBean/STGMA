@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1215 480" preserveAspectRatio="xMidYMid meet">
+  <!-- Transparent background -->
+  <rect x="0" y="0" width="1215" height="480" fill="none" />
+  <!-- Faint border for reference (remove before final export) -->
+  <rect x="1" y="1" width="1213" height="478" fill="none" stroke="#bbb" stroke-width="2" stroke-dasharray="12,8" />
+  <!-- Insert your logo artwork here -->
+</svg>

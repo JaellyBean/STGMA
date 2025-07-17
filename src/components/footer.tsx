@@ -1,10 +1,10 @@
-import Link from 'next/link';
-import { Logo } from './logo';
+import Link from "next/link";
+import { Logo } from "./logo";
 
 const footerLinks = [
-  { href: '/about', label: 'About' },
-  { href: '/resources', label: 'Resources' },
-  { href: '/shop', label: 'Shop' },
+  { href: "/about", label: "About" },
+  { href: "/resources", label: "Resources" },
+  { href: "/shop", label: "Shop" },
 ];
 
 export function Footer() {
@@ -22,21 +22,42 @@ export function Footer() {
             <div className="flex flex-col gap-3">
               <h4 className="font-headline text-lg font-semibold">Explore</h4>
               {footerLinks.map((link) => (
-                <Link key={link.href} href={link.href} className="text-sm text-foreground/80 hover:text-foreground">
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className="text-sm text-foreground/80 hover:text-foreground"
+                >
                   {link.label}
                 </Link>
               ))}
             </div>
             <div className="flex flex-col gap-3">
               <h4 className="font-headline text-lg font-semibold">Support</h4>
-              <Link href="/faq" className="text-sm text-foreground/80 hover:text-foreground">FAQ</Link>
-              <Link href="#" className="text-sm text-foreground/80 hover:text-foreground">Shipping</Link>
-              <Link href="#" className="text-sm text-foreground/80 hover:text-foreground">Returns</Link>
+              <Link
+                href="/faq"
+                className="text-sm text-foreground/80 hover:text-foreground"
+              >
+                FAQ
+              </Link>
+              <Link
+                href="#"
+                className="text-sm text-foreground/80 hover:text-foreground"
+              >
+                Shipping
+              </Link>
+              <Link
+                href="#"
+                className="text-sm text-foreground/80 hover:text-foreground"
+              >
+                Returns
+              </Link>
             </div>
           </div>
         </div>
         <div className="mt-8 border-t pt-8 text-center text-sm text-foreground/60">
-          <p>&copy; 2022 - {new Date().getFullYear()} STGMA. All rights reserved.</p>
+          <p>
+            &copy; 2022 - {new Date().getFullYear()} STGMA. All rights reserved.
+          </p>
         </div>
       </div>
     </footer>
